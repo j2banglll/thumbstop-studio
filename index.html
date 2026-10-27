@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thumbstop Studio | Video ads that stop the scroll</title>
+  <meta name="description" content="Short-form video ads for e-commerce brands. Scroll-stopping hooks, fast turnaround, built for TikTok, Reels, and Meta. Get a free test edit.">
+  <meta name="theme-color" content="#0a0a0d">
+
+  <!-- Social share preview (shows when the link is pasted into Messenger, X, LinkedIn, etc.) -->
+  <meta property="og:title" content="Thumbstop Studio | Video ads that stop the scroll">
+  <meta property="og:description" content="Short-form video ads for e-commerce brands. Get a free test edit.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="logo" href="#top" aria-label="Thumbstop Studio home">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span>Thumbstop<span class="logo__dim"> Studio</span></span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav class="nav__links" id="nav-links">
+        <a href="#work">Work</a>
+        <a href="#offer">What you get</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn--sm" href="#contact">Get a free test edit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Video ads for e-commerce brands</p>
+          <h1>Ads that stop the scroll <em>and sell the product.</em></h1>
+          <p class="lead">
+            You have about one second before a shopper swipes past. I edit short-form ads
+            for TikTok, Reels, and Meta that win that second, then show why your product is worth buying.
+          </p>
+          <div class="hero__ctas">
+            <a class="btn" href="#contact">Get a free test edit</a>
+            <a class="btn btn--ghost" href="#work">See the work</a>
+          </div>
+          <ul class="ticks">
+            <li>Free 15-second test ad</li>
+            <li>3 hook variations per ad</li>
+            <li>48-hour turnaround</li>
+          </ul>
+        </div>
+
+        <!-- Animated phone: a mini "ad" built with CSS, no video file needed -->
+        <div class="phone" aria-hidden="true">
+          <div class="phone__screen">
+            <div class="phone__bar"><span></span></div>
+            <div class="phone__product"></div>
+            <p class="phone__hook">
+              <span>I</span> <span>stopped</span> <span>buying</span> <span class="hl">cheap</span> <span>serums</span>
+            </p>
+            <div class="phone__side">
+              <i></i><i></i><i></i>
+            </div>
+            <div class="phone__cta">Shop now</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-label="Formats I edit for">
+        <div class="marquee__track">
+          <span>TikTok Ads</span><span>Meta Reels</span><span>YouTube Shorts</span><span>UGC</span><span>Product demos</span><span>Unboxings</span><span>Founder stories</span><span>Before / after</span>
+          <span aria-hidden="true">TikTok Ads</span><span aria-hidden="true">Meta Reels</span><span aria-hidden="true">YouTube Shorts</span><span aria-hidden="true">UGC</span><span aria-hidden="true">Product demos</span><span aria-hidden="true">Unboxings</span><span aria-hidden="true">Founder stories</span><span aria-hidden="true">Before / after</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEM ============ -->
+    <section class="section" id="problem">
+      <div class="wrap">
+        <p class="eyebrow">The problem</p>
+        <h2 class="reveal">Your product is good.<br>Your ads get skipped.</h2>
+        <div class="cards3">
+          <article class="card reveal">
+            <span class="card__num">01</span>
+            <h3>Weak first second</h3>
+            <p>Logos, slow intros, and "Hey guys" openings. Shoppers decide to swipe before the product even appears.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__num">02</span>
+            <h3>One version, no testing</h3>
+            <p>You spend on a single creative and hope. When it flops you can't tell if the hook, the offer, or the edit was the problem.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__num">03</span>
+            <h3>Ad fatigue</h3>
+            <p>Even winning ads burn out in weeks. Without fresh variations your cost per purchase creeps up.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============
+         HOW TO ADD YOUR VIDEOS (see README):
+         - YouTube Short:  data-youtube="VIDEO_ID"
+         - Your own file:  put the .mp4 in assets/videos/ and use data-video="assets/videos/name.mp4"
+         - Optional poster image: data-poster="assets/videos/name.jpg"
+    -->
+    <section class="section section--alt" id="work">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2 class="reveal">Built to be watched,<br>edited to convert.</h2>
+          </div>
+          <p class="muted">Tap any ad to play it.</p>
+        </div>
+
+        <div class="reels">
+          <button class="reel reveal" data-video="" data-poster="" style="--hue: 18">
+            <span class="reel__tag">UGC ad</span>
+            <span class="reel__title">Skincare serum</span>
+            <span class="reel__play" aria-hidden="true"></span>
+          </button>
+          <button class="reel reveal" data-video="" data-poster="" style="--hue: 200">
+            <span class="reel__tag">Product demo</span>
+            <span class="reel__title">Kitchen gadget</span>
+            <span class="reel__play" aria-hidden="true"></span>
+          </button>
+          <button class="reel reveal" data-video="" data-poster="" style="--hue: 280">
+            <span class="reel__tag">Founder story</span>
+            <span class="reel__title">Supplement brand</span>
+            <span class="reel__play" aria-hidden="true"></span>
+          </button>
+          <button class="reel reveal" data-video="" data-poster="" style="--hue: 140">
+            <span class="reel__tag">Before / after</span>
+            <span class="reel__title">Home cleaning</span>
+            <span class="reel__play" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OFFER ============ -->
+    <section class="section" id="offer">
+      <div class="wrap">
+        <p class="eyebrow">What you get</p>
+        <h2 class="reveal">Every ad comes ready to test.</h2>
+        <div class="offer">
+          <div class="offer__item reveal">
+            <h3>3 hooks, 1 body</h3>
+            <p>Each ad ships with three different openings so you can find the winner, not guess it.</p>
+          </div>
+          <div class="offer__item reveal">
+            <h3>Captions that keep eyes on</h3>
+            <p>Bold, on-beat captions. Most people watch with the sound off, so the story still lands.</p>
+          </div>
+          <div class="offer__item reveal">
+            <h3>Sound design and music</h3>
+            <p>Licensed-safe music, sound effects on every cut, and clean voice audio.</p>
+          </div>
+          <div class="offer__item reveal">
+            <h3>Every placement</h3>
+            <p>9:16 for TikTok and Reels, 4:5 for the feed, 1:1 when you need it. Exported to each platform's specs.</p>
+          </div>
+          <div class="offer__item reveal">
+            <h3>Motion graphics</h3>
+            <p>Price callouts, product highlights, and reviews animated on screen so the offer is impossible to miss.</p>
+          </div>
+          <div class="offer__item reveal">
+            <h3>English and Taglish</h3>
+            <p>Selling in the Philippines too? I edit and caption in English, Tagalog, and Taglish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section section--alt" id="process">
+      <div class="wrap">
+        <p class="eyebrow">How it works</p>
+        <h2 class="reveal">From raw clips to live ad in 4 steps.</h2>
+        <ol class="steps">
+          <li class="reveal"><strong>Send your footage</strong><span>UGC clips, product shots, or just your phone videos. A Google Drive link is fine.</span></li>
+          <li class="reveal"><strong>I write the hooks</strong><span>I study your product and audience, then plan 3 openings and the story.</span></li>
+          <li class="reveal"><strong>You get the edit in 48h</strong><span>All hook variations and sizes, ready to upload to your ad account.</span></li>
+          <li class="reveal"><strong>Revise, then scale</strong><span>Two rounds of changes included. When an ad wins, we make more like it.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============
+         Change prices and package details here. Prices are in USD. -->
+    <section class="section" id="pricing">
+      <div class="wrap">
+        <p class="eyebrow">Pricing</p>
+        <h2 class="reveal">Simple packages. No contracts.</h2>
+        <div class="prices">
+          <article class="price reveal">
+            <h3>Starter</h3>
+            <p class="price__amt"><span>$</span>149</p>
+            <p class="muted">For testing a new product.</p>
+            <ul>
+              <li>1 ad, 3 hook variations</li>
+              <li>Up to 30 seconds</li>
+              <li>9:16 + 4:5</li>
+              <li>2 revision rounds</li>
+            </ul>
+            <a class="btn btn--ghost" href="#contact">Start with Starter</a>
+          </article>
+          <article class="price price--hot reveal">
+            <span class="price__badge">Most popular</span>
+            <h3>Growth</h3>
+            <p class="price__amt"><span>$</span>399</p>
+            <p class="muted">For brands running ads every week.</p>
+            <ul>
+              <li>3 ads, 3 hooks each (9 creatives)</li>
+              <li>Up to 45 seconds</li>
+              <li>All sizes + motion graphics</li>
+              <li>Priority 48h delivery</li>
+            </ul>
+            <a class="btn" href="#contact">Choose Growth</a>
+          </article>
+          <article class="price reveal">
+            <h3>Scale</h3>
+            <p class="price__amt"><span>$</span>999<small>/mo</small></p>
+            <p class="muted">Your ongoing creative team.</p>
+            <ul>
+              <li>10 ads per month</li>
+              <li>Hook and angle research</li>
+              <li>Monthly performance review</li>
+              <li>Direct chat line</li>
+            </ul>
+            <a class="btn btn--ghost" href="#contact">Talk about Scale</a>
+          </article>
+        </div>
+        <p class="guarantee reveal">
+          <strong>Not sure yet?</strong> Send one raw clip and I'll turn it into a free 15-second test ad.
+          If you don't like it, you owe nothing.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============
+         Hidden until you have REAL client quotes. To turn it on:
+         1. Replace the quote, name, and brand below with a real one (get the client's OK).
+         2. Delete the word "hidden" from the <section> tag.
+         Never publish made-up reviews. -->
+    <section class="section section--alt" id="results" hidden>
+      <div class="wrap">
+        <p class="eyebrow">Results</p>
+        <h2>What clients say</h2>
+        <div class="quotes">
+          <blockquote class="quote">
+            <p>"Real client quote goes here."</p>
+            <footer>Client Name, Brand</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="wrap wrap--narrow">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="reveal">Questions brands ask first.</h2>
+        <div class="faq">
+          <details>
+            <summary>I don't have any footage. Can you still help?</summary>
+            <p>Yes. Phone videos of the product are enough to start. I can also tell you exactly what to film, shot by shot, so a friend or a UGC creator can record it in 20 minutes.</p>
+          </details>
+          <details>
+            <summary>How is this different from hiring a cheap editor?</summary>
+            <p>A cheap edit cuts clips together. I plan the ad around the hook, the objection, and the offer, and give you variations to test. You're paying for ads that are built to sell, not just to look nice.</p>
+          </details>
+          <details>
+            <summary>How fast can I get my ads?</summary>
+            <p>Most ads are delivered within 48 hours of receiving your footage. Rush delivery is available if you have a launch date.</p>
+          </details>
+          <details>
+            <summary>What if I don't like the edit?</summary>
+            <p>Every package includes two revision rounds. And the first test ad is free, so you see my work on your product before you pay anything.</p>
+          </details>
+          <details>
+            <summary>How do I pay?</summary>
+            <p>50% upfront and 50% on delivery for packages, monthly for Scale. PayPal, Wise, and bank transfer are all fine.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============
+         Replace hello@example.com and the social links with your own. -->
+    <section class="section cta" id="contact">
+      <div class="wrap wrap--narrow cta__inner">
+        <p class="eyebrow">Free test edit</p>
+        <h2 class="reveal">Send one clip.<br>Get a free ad back.</h2>
+        <p class="lead">Email me your product link and one raw clip. You'll get a 15-second test ad within 48 hours. No cost, no commitment.</p>
+        <a class="btn btn--lg" href="mailto:hello@example.com?subject=Free%20test%20edit&body=Product%20link%3A%20%0AClip%20link%3A%20%0AWhere%20you%20run%20ads%3A%20">
+          Email me for a free test edit
+        </a>
+        <p class="muted small">Or reach me on</p>
+        <ul class="socials">
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>&copy; <span id="year">2026</span> Thumbstop Studio</span>
+      <a href="#top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <!-- Video player popup -->
+  <dialog class="modal" id="player" aria-label="Video player">
+    <button class="modal__close" aria-label="Close video">&times;</button>
+    <div class="modal__body"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

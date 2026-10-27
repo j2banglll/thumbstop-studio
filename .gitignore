@@ -1,0 +1,24 @@
+# OS clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Dependencies and logs (if you ever add tools)
+node_modules/
+*.log
+
+# Secrets
+.env
+.env.*
+
+# Raw / working video files: export small web copies into assets/videos/ instead
+*.mov
+*.mkv
+*.prproj
+*.drp
+raw/
