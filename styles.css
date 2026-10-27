@@ -357,8 +357,8 @@ p { margin: 0 0 1rem; }
   background: #000; color: var(--text); overflow: visible;
 }
 .modal::backdrop { background: rgba(0, 0, 0, 0.82); backdrop-filter: blur(4px); }
-.modal__body { aspect-ratio: 9 / 16; max-height: calc(100vh - 34px); border-radius: var(--radius); overflow: hidden; display: grid; place-content: center; }
-.modal__body video, .modal__body iframe { width: 100%; height: 100%; border: 0; object-fit: contain; }
+.modal__body { position: relative; aspect-ratio: 9 / 16; max-height: calc(100vh - 34px); border-radius: var(--radius); overflow: hidden; display: grid; place-content: center; }
+.modal__body video, .modal__body iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: contain; }
 .modal__body .modal__empty { padding: 32px; text-align: center; color: var(--muted); }
 .modal__close {
   position: absolute; top: -14px; right: -14px; z-index: 2;

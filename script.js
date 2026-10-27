@@ -42,7 +42,9 @@ const player = document.getElementById("player");
 const body = player.querySelector(".modal__body");
 
 document.querySelectorAll(".reel").forEach((reel) => {
-  const poster = reel.dataset.poster;
+  const { drive } = reel.dataset;
+  // Public Google Drive files get their thumbnail automatically
+  const poster = reel.dataset.poster || (drive ? `https://drive.google.com/thumbnail?id=${encodeURIComponent(drive)}&sz=w720` : "");
   if (poster) {
     reel.style.backgroundImage = `linear-gradient(180deg, transparent 45%, rgba(0,0,0,0.75)), url("${poster}")`;
   }
@@ -51,7 +53,14 @@ document.querySelectorAll(".reel").forEach((reel) => {
     const { video, youtube } = reel.dataset;
     body.replaceChildren();
 
-    if (youtube) {
+    if (drive) {
+      const frame = document.createElement("iframe");
+      frame.src = `https://drive.google.com/file/d/${encodeURIComponent(drive)}/preview`;
+      frame.title = reel.querySelector(".reel__title").textContent;
+      frame.allow = "autoplay; fullscreen";
+      frame.allowFullscreen = true;
+      body.append(frame);
+    } else if (youtube) {
       const frame = document.createElement("iframe");
       frame.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(youtube)}?autoplay=1&playsinline=1`;
       frame.title = reel.querySelector(".reel__title").textContent;

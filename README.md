@@ -35,6 +35,8 @@ Then open http://localhost:5173 in your browser. Press `Ctrl+C` in the terminal 
 
 Each card in the "Selected work" section is a `<button class="reel">`. Fill in one of these:
 
+- **A Google Drive video**: `data-drive="FILE_ID"`, the long code in the share link between `/d/` and `/view`.
+  The file must be shared as "Anyone with the link". The thumbnail is picked up automatically.
 - **A YouTube Short or video**: `data-youtube="VIDEO_ID"` (the part after `shorts/` or `v=` in the link).
 - **Your own file**: copy it to `assets/videos/` and set `data-video="assets/videos/my-ad.mp4"`.
 - **Thumbnail (optional)**: `data-poster="assets/videos/my-ad.jpg"`.
